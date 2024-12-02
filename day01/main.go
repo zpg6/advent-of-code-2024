@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	fmt.Println("Advent of Code 2024 - Day 1\n---")
 
 	// ======= PART 1 =======
 
@@ -57,7 +58,7 @@ func main() {
 		}
 	}
 
-	fmt.Println(sum) // Correct answer is 2057374
+	fmt.Println("Sum of the differences is:", sum) // Correct answer is 2057374
 
 	// ======= PART 2 =======
 
@@ -75,5 +76,5 @@ func main() {
 		// similarity += left_element * count
 		score += (left_element * count)
 	}
-	fmt.Println(score) // Correct answer is 23177084
+	fmt.Println("Similarity score is:", score) // Correct answer is 23177084
 }
