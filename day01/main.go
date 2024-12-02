@@ -21,6 +21,9 @@ func main() {
 	defer file.Close()
 
 	// Create two lists to store the left and right elements
+	//
+	// TODO: Use a data structure that will store the elements in order
+	// so that we don't have to sort them later.
 	var listLeft []int
 	var listRight []int
 
@@ -63,6 +66,9 @@ func main() {
 	// ======= PART 2 =======
 
 	// Now calculate similarity score
+	//
+	// TODO: Use a data structure to store the counts of the elements
+	// so that we don't have to iterate over the listRight for each element.
 	var score int
 	for i := 0; i < len(listLeft); i++ {
 		left_element := listLeft[i]
